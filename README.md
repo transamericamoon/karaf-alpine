@@ -1,8 +1,12 @@
 # karaf alpine docker image
 
-Karaf docker image with alpine base.  Exposing deploy and data folders for persistence
+Karaf docker image with alpine base. Exposing deploy and data folders for persistence
 
-```
+Supported tags and respective Dockerfile links
+==================
+* 4.0.5 ([dockerfile](https://github.com/transamericamoon/karaf-alpine))
+
+```console
 docker run -d -t \
   --name karaf \
   -p 1099:1099 \
@@ -12,3 +16,5 @@ docker run -d -t \
   -v /host/path/data:/data \
   transamericamoon/karaf-alpine
 ```
+
+
