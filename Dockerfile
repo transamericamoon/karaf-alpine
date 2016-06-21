@@ -1,4 +1,4 @@
-FROM java:openjdk-8-jre-alpine
+FROM java:openjdk-8-jdk-alpine
 MAINTAINER TRANSAMERICA_MOON
 
 ENV JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk
