@@ -15,7 +15,6 @@ RUN mkdir /opt; \
     mkdir /deploy; \
     mkdir /data; \
     sed -i 's/^\(felix\.fileinstall\.dir\s*=\s*\).*$/\1\/deploy/' /opt/karaf/etc/org.apache.felix.fileinstall-deploy.cfg; \
-    sed -i 's/^\(felix\.fileinstall\.dir\s*=\s*\).*$/\1\/deploy/' /opt/karaf/etc/org.apache.felix.fileinstall-deploy.cfg; \
     sed -i '1s/.*/#\!\/bin\/ash/' /opt/karaf/bin/karaf;
 
 VOLUME ["/deploy"]
